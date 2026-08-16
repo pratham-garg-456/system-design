@@ -2,12 +2,20 @@
   max-width: 100%;
 }
 
+:root {
+  --divider-color: rgba(0, 0, 0, 0.12);
+}
+
+[data-md-color-scheme="slate"] {
+  --divider-color: rgba(255, 255, 255, 0.16);
+}
+
 .md-sidebar--primary {
-  border-right: 1px solid var(--md-default-fg-color--lightest);
+  border-right: 1px solid var(--divider-color);
 }
 
 .md-sidebar--secondary {
-  border-left: 1px solid var(--md-default-fg-color--lightest);
+  border-left: 1px solid var(--divider-color);
 }
 
 .md-typeset {
