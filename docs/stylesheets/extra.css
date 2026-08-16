@@ -1,3 +1,11 @@
 .md-grid {
   max-width: 100%;
 }
+
+.md-sidebar--primary {
+  border-right: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-sidebar--secondary {
+  border-left: 1px solid var(--md-default-fg-color--lightest);
+}
