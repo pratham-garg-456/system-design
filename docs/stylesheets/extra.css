@@ -3,19 +3,19 @@
 }
 
 :root {
-  --divider-color: rgba(0, 0, 0, 0.12);
+  --divider-color: rgba(0, 0, 0, 0.25);
 }
 
 [data-md-color-scheme="slate"] {
-  --divider-color: rgba(255, 255, 255, 0.16);
+  --divider-color: rgba(255, 255, 255, 0.25);
 }
 
 .md-sidebar--primary {
-  border-right: 1px solid var(--divider-color);
+  border-right: 2px solid var(--divider-color);
 }
 
 .md-sidebar--secondary {
-  border-left: 1px solid var(--divider-color);
+  border-left: 2px solid var(--divider-color);
 }
 
 .md-typeset {
@@ -26,6 +26,7 @@
   font-size: 2.5rem;
   font-weight: 800;
   letter-spacing: -0.02em;
+  color: var(--md-default-fg-color);
 }
 
 .md-typeset h2 {
