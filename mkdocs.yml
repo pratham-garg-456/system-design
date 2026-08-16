@@ -26,6 +26,7 @@ theme:
     - navigation.instant
     - navigation.tracking
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.top
     - navigation.indexes
     - navigation.footer
@@ -35,6 +36,9 @@ theme:
     - content.action.edit
   icon:
     repo: fontawesome/brands/github
+  font:
+    text: Inter
+    code: JetBrains Mono
 
 extra_css:
   - stylesheets/extra.css

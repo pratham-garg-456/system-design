@@ -9,3 +9,24 @@
 .md-sidebar--secondary {
   border-left: 1px solid var(--md-default-fg-color--lightest);
 }
+
+.md-typeset {
+  font-size: 0.85rem;
+}
+
+.md-typeset h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.md-typeset h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.md-typeset h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
