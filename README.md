@@ -1,5 +1,7 @@
 # System Design
 
+📖 **Browse these notes as a searchable site: https://pratham-garg-456.github.io/system-design/**
+
 Hey, welcome to the course. I hope this course provides a great learning experience.
 
 _This course is also available on my [website](https://karanpratapsingh.com/courses/system-design) and as an ebook on [leanpub](https://leanpub.com/systemdesign). Please leave a ⭐ as motivation if this was helpful!_
