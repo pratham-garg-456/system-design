@@ -10,6 +10,11 @@
   --divider-color: rgba(255, 255, 255, 0.25);
 }
 
+.md-sidebar--primary,
+.md-sidebar--secondary {
+  align-self: stretch;
+}
+
 .md-sidebar--primary {
   border-right: 2px solid var(--divider-color);
 }
@@ -22,11 +27,25 @@
   font-size: 0.85rem;
 }
 
+:root {
+  --heading-color: #000;
+}
+
+[data-md-color-scheme="slate"] {
+  --heading-color: #fff;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4 {
+  color: var(--heading-color);
+}
+
 .md-typeset h1 {
   font-size: 2.5rem;
   font-weight: 800;
   letter-spacing: -0.02em;
-  color: var(--md-default-fg-color);
 }
 
 .md-typeset h2 {
