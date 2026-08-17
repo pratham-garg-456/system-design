@@ -45,13 +45,18 @@ extra_css:
 
 markdown_extensions:
   - admonition
+  - pymdownx.details
   - attr_list
   - md_in_html
   - tables
   - toc:
       permalink: true
   - pymdownx.highlight
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.inlinehilite
   - pymdownx.tabbed:
       alternate_style: true

@@ -54,3 +54,105 @@
 .md-typeset h4 {
   font-weight: 700;
 }
+
+.example {
+  border-left: 3px solid var(--divider-color);
+  padding: 0.1rem 1rem;
+  margin: 1rem 0;
+  font-size: 0.75rem;
+}
+
+.example p {
+  margin: 0.5rem 0;
+}
+
+.example p:first-child {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.7rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .mermaid {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  margin: 2rem 0;
+}
+
+.diagram-connector {
+  display: flex;
+  justify-content: flex-end;
+  margin: -1.5rem 3rem 0 0;
+}
+
+.diagram-connector svg {
+  display: block;
+  stroke: var(--md-mermaid-edge-color);
+  fill: var(--md-mermaid-edge-color);
+}
+
+.hand-diagram {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  margin: 2rem 0;
+}
+
+.hand-diagram svg {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.figure-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.figure-row .img-figure {
+  flex: 1 1 280px;
+  margin: 0;
+}
+
+.img-figure {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.img-figure img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.img-figure .hand-diagram {
+  margin: 0;
+}
+
+.img-figure figcaption {
+  margin-top: 0.6rem;
+  font-size: 0.7rem;
+  color: var(--md-default-fg-color--light);
+}
+
+/* Material defines mermaid vars on `:root > *` (i.e. directly on <body>), which
+   beats a plain `:root` override in the cascade, so we have to match it here. */
+:root > * {
+  --md-mermaid-font-family: "Inter", sans-serif;
+  --md-mermaid-edge-color: rgba(0, 0, 0, 0.35);
+  --md-mermaid-node-bg-color: rgba(0, 0, 0, 0.02);
+  --md-mermaid-node-fg-color: #000;
+  --md-mermaid-label-bg-color: rgba(0, 0, 0, 0);
+  --md-mermaid-label-fg-color: #000;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-mermaid-edge-color: rgba(255, 255, 255, 0.35);
+  --md-mermaid-node-bg-color: rgba(255, 255, 255, 0.04);
+  --md-mermaid-node-fg-color: #fff;
+  --md-mermaid-label-bg-color: rgba(0, 0, 0, 0);
+  --md-mermaid-label-fg-color: #fff;
+}
