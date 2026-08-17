@@ -10,17 +10,9 @@
   --divider-color: rgba(255, 255, 255, 0.25);
 }
 
-.md-sidebar--primary,
-.md-sidebar--secondary {
-  align-self: stretch;
-}
-
-.md-sidebar--primary {
-  border-right: 2px solid var(--divider-color);
-}
-
-.md-sidebar--secondary {
+.md-content {
   border-left: 2px solid var(--divider-color);
+  border-right: 2px solid var(--divider-color);
 }
 
 .md-typeset {
